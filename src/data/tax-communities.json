@@ -1,0 +1,94 @@
+{
+  "_meta": {
+    "version": "2025-A",
+    "lastUpdated": "2025-01-01",
+    "source": "רשות המסים בישראל - תקנות מס הכנסה (שיעור המס על הכנסה בגין עבודה ביישובים מזכים)",
+    "notes": "נתונים לשנת המס 2025. יש לעדכן מדי שנה בהתאם לפרסומי רשות המסים."
+  },
+  "communities": [
+    {
+      "id": "sderot",
+      "nameHebrew": "שדרות",
+      "region": "הנגב המערבי",
+      "benefitPercentage": 20,
+      "annualCap": 234000
+    },
+    {
+      "id": "kiryat-shmona",
+      "nameHebrew": "קריית שמונה",
+      "region": "הגליל העליון",
+      "benefitPercentage": 20,
+      "annualCap": 234000
+    },
+    {
+      "id": "mitzpe-ramon",
+      "nameHebrew": "מצפה רמון",
+      "region": "הנגב",
+      "benefitPercentage": 20,
+      "annualCap": 234000
+    },
+    {
+      "id": "ofakim",
+      "nameHebrew": "אופקים",
+      "region": "הנגב המערבי",
+      "benefitPercentage": 20,
+      "annualCap": 234000
+    },
+    {
+      "id": "dimona",
+      "nameHebrew": "דימונה",
+      "region": "הנגב",
+      "benefitPercentage": 20,
+      "annualCap": 234000
+    },
+    {
+      "id": "nahariya",
+      "nameHebrew": "נהריה",
+      "region": "הגליל המערבי",
+      "benefitPercentage": 12,
+      "annualCap": 198000
+    },
+    {
+      "id": "akko",
+      "nameHebrew": "עכו",
+      "region": "הגליל המערבי",
+      "benefitPercentage": 12,
+      "annualCap": 198000
+    },
+    {
+      "id": "beit-shean",
+      "nameHebrew": "בית שאן",
+      "region": "עמק בית שאן",
+      "benefitPercentage": 20,
+      "annualCap": 234000
+    },
+    {
+      "id": "arad",
+      "nameHebrew": "ערד",
+      "region": "הנגב",
+      "benefitPercentage": 20,
+      "annualCap": 234000
+    },
+    {
+      "id": "yerucham",
+      "nameHebrew": "ירוחם",
+      "region": "הנגב",
+      "benefitPercentage": 20,
+      "annualCap": 234000
+    },
+    {
+      "id": "netivot",
+      "nameHebrew": "נתיבות",
+      "region": "הנגב המערבי",
+      "benefitPercentage": 20,
+      "annualCap": 234000
+    },
+    {
+      "id": "bet-shemesh",
+      "nameHebrew": "בית שמש",
+      "region": "יהודה",
+      "benefitPercentage": 12,
+      "annualCap": 198000
+    }
+  ]
+}
