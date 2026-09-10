@@ -19,11 +19,11 @@ export function A11yPanel({ open, onClose }) {
     return () => document.removeEventListener("keydown", handler);
   }, [open, onClose]);
 
-  // Apply body classes
+  // Apply font-size to <html> so rem cascade works site-wide
   useEffect(() => {
-    document.body.classList.remove("fs-lg", "fs-xl");
-    if (fs === "lg") document.body.classList.add("fs-lg");
-    if (fs === "xl") document.body.classList.add("fs-xl");
+    document.documentElement.classList.remove("fs-lg", "fs-xl");
+    if (fs === "lg") document.documentElement.classList.add("fs-lg");
+    if (fs === "xl") document.documentElement.classList.add("fs-xl");
   }, [fs]);
 
   useEffect(() => { document.body.classList.toggle("hc", hc); }, [hc]);
@@ -31,7 +31,12 @@ export function A11yPanel({ open, onClose }) {
   useEffect(() => { document.body.classList.toggle("cursor-lg", cur); }, [cur]);
 
   function reset() {
-    setFs("base"); setHc(false); setUl(false); setCur(false);
+    setFs("base");
+    setHc(false);
+    setUl(false);
+    setCur(false);
+    document.documentElement.classList.remove("fs-lg", "fs-xl");
+    document.body.classList.remove("hc", "underline-links", "cursor-lg");
   }
 
   const sizes = [

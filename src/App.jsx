@@ -40,7 +40,7 @@ export default function App() {
       <div className="page">
         {/* Topbar */}
         <nav className="topbar" aria-label="ניווט ראשי">
-          <a className="topbar__logo" href="/" aria-label="עמוד הבית">רשות המסים</a>
+          <a className="topbar__logo" href="/" aria-label="עמוד הבית">מחשבון הטבות מס</a>
           <div className="topbar__sep" aria-hidden="true" />
           <span className="topbar__crumb">מחשבון יישובים מזכים</span>
         </nav>
@@ -48,8 +48,8 @@ export default function App() {
         {/* Hero */}
         <div className="hero" role="banner">
           <div className="hero__inner">
-            <span className="hero__tag">הטבות מס לפי מיקום</span>
-            <h1 className="hero__title">מחשבון הטבות מס — יישובים מזכים</h1>
+            <span className="hero__tag">הטבות מס על בסיס מגורים ביישוב מזכה</span>
+            <h1 className="hero__title">מחשבון הטבות מס — יישובים מזכים לשנת 2026</h1>
             <p className="hero__sub">
               הזן שכר ברוטו חודשי ובחר יישוב מזכה כדי לקבל הערכה של זיכוי המס
               החודשי והשנתי שלך, בהתאם לתקנות מס הכנסה.
@@ -99,11 +99,10 @@ export default function App() {
         {/* Footer */}
         <footer className="footer">
           <div className="footer__inner">
-            <span>גרסת נתונים: {_meta.version} &nbsp;|&nbsp; עודכן: {_meta.lastUpdated}</span>
+            <span>גרסת נתונים: 2026</span>
             <div className="footer__links">
-              <a href="#" className="footer__link">הצהרת נגישות</a>
-              <a href="#" className="footer__link">מדיניות פרטיות</a>
-              <a href="#" className="footer__link">צור קשר</a>
+              <a href="#a11y-statement" className="footer__link" id="footer-a11y-link">הצהרת נגישות</a>
+              <a href="#privacy-policy" className="footer__link" id="footer-privacy-link">מדיניות פרטיות</a>
             </div>
           </div>
         </footer>

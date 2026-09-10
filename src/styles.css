@@ -118,9 +118,12 @@ body.hc {
   --text: #fff; --text-mid: #ddd; --text-muted: #bbb;
   --accent: #FFD700; --accent-pale: #2a2200; --accent-dark: #cc9900; --row-alt: #1a1a1a;
 }
-body.fs-lg { font-size: 18px; }
-body.fs-xl { font-size: 21px; }
-body.underline-links a { text-decoration: underline !important; }
+html.fs-lg { font-size: 19px; }
+html.fs-xl { font-size: 22px; }
+html.fs-lg body, html.fs-xl body { font-size: 1rem; }
+body.underline-links a,
+body.underline-links .footer__link,
+body.underline-links .skip-link { text-decoration: underline !important; }
 
 /* ── LAYOUT ── */
 .page { display: flex; flex-direction: column; min-height: 100vh; }
@@ -316,3 +319,9 @@ body.underline-links a { text-decoration: underline !important; }
   * { transition: none !important; animation: none !important; }
 }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* ── CURSOR LARGE ── */
+body.cursor-lg,
+body.cursor-lg * {
+  cursor: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'><path fill='%23000000' stroke='%23ffffff' stroke-width='2' d='M10 2 L10 30 L16 22 L22 34 L26 32 L20 20 L30 20 Z'/></svg>") 5 0, auto !important;
+}
